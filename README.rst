@@ -1,4 +1,4 @@
-Quora_question_pairs_Kaggle
+Quora_question_pairs_NLP_Kaggle
 *****************************************************
 
 Introduction
