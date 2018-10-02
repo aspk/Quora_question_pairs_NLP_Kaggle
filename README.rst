@@ -13,7 +13,11 @@ Tensorflow, Python3, Xgboost, scikit-learn, numpy
 
 Method
 ---------------
-I used word_to_vec embeddings from Google, and scikit-learn and xgboost for training. A machine with 32 GB ram is prefered to run this code.
+1. I used word_to_vec embeddings[1] from Google, and scikit-learn and xgboost for training. A machine with 32 GB ram is prefered to run this code.
+2. Bag of words models , count vectorizer and logistic regression 
+3. Trained an autoencoder to compress phrase information, and use dynamic pooling and pairwise similarity to create a matrix of question pairs.CNN is used for classification on pairwise similarity matrix between words and phrases of each question. Model similar to Socher et al.[2]
 
-word_to_vec reference :
+[1]word_to_vec reference :
 https://github.com/tensorflow/tensorflow/blob/r1.9/tensorflow/examples/tutorials/word2vec/word2vec_basic.py
+
+[2] Socher, Richard, et al. "Dynamic pooling and unfolding recursive autoencoders for paraphrase detection." Advances in neural information processing systems. 2011.
