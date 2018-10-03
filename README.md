@@ -39,7 +39,7 @@ The autoencoder here uses any two words for training and can be batch trained. I
 The entire sentence with its intermediate encodings can be used as input to the upsampling and dynamic pooling phase. In the upsampling phase, the smaller vector of the question pair considered is upsampled by repeating the encodings randomly chosen of the vector to match the length of the other question encodings. A pairwise similarity matrix is generated for each phrase vector, and the variable dimention matrix is pooled into a matrix of npool x npool. I used npool = 28. This matrix is fed into a CNN classifier to classify as duplicate or not. A hyper parameter optimization of npool could also increase tha accuracy. The accuracy of this model is 63.8 % .
 
 ### Issues
-I faced some issued with sklearn's Logistic regression. The model did output right class labels ubt wrong probabilities. I havent figured out a solution to this problem. There was no such problem with XGBoost.
+I faced some issued with sklearn's Logistic regression. The model did output right class labels but wrong probabilities. I havent figured out a solution to this problem. There was no such problem with XGBoost.
 ### References
 
 Best question pair matching method : Wang, Zhiguo, Wael Hamza, and Radu Florian. "Bilateral multi-perspective matching for natural language sentences." arXiv preprint arXiv:1702.03814 (2017).
