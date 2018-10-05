@@ -1,5 +1,8 @@
 # Duplicate question detection using Word2Vec, XGBoost and Autoencoders
 
+![](https://i.imgur.com/2YlTY1Y.jpg)
+
+
 In this post, I tackle the problem of classifying questions pairs based on whether they are duplicate or not duplicate. This is important for companies like Quora, or Stack Overflow where multiple questions posted are duplicates of questions already answered. If a duplicate question is spotted by an algorithm, the user can be directed to it and reach the answer faster.
 
 An example of two duplicate questions is 'How do I read and find my YouTube comments?' and 'How can I see all my Youtube comments?', and non duplicate questions is 'What's causing someone to be jealous?' and 'What can I do to avoid being jealous of someone?'.
